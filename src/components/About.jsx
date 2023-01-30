@@ -27,13 +27,18 @@ const About = () => {
                 backgroundImage: `url(${aboutPic1})`,
                 backgroundRepeat: "no-repeat",
               }}
-              data-aos="fade-up"
-              data-aos-delay="150"
             >
               <div className="call-us position-absolute">
                 <h4>Book a Table</h4>
                 <p>+1 5589 55488 55</p>
               </div>
+              <p className="position-absolute" style={{ bottom: "0" }}>
+                Booking a table in a restaurant ensures that you have a
+                guaranteed spot and that you won't need to worry about waiting
+                in line. Making a reservation at a restaurant can also give you
+                the opportunity to reserve special seating and request dietary
+                preferences ahead of time.
+              </p>
             </motion.div>
 
             <motion.div
@@ -134,13 +139,18 @@ const AboutContainer = styled.div`
     margin-bottom: 30px;
     font-family: var(--font-secondary);
   }
+  .about-img p {
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
 
   .about .call-us {
     position: absolute;
-    top: 50%;
+    width: 100%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border-radius: 5px;
     border: 4px solid #dcdcdc;
     background-color: #1719235e;
     backdrop-filter: blur(5px);

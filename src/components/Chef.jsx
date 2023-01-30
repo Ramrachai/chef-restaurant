@@ -24,8 +24,9 @@ const Chef = () => {
               <motion.div
                 initial={{ opacity: 0, x: 300 }}
                 whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.3 }}
+                transition={{ duration: 0.2 }}
                 className="chef-member"
+                whileHover={{ scale: 1.06 }}
               >
                 <div className="member-img">
                   <img src={chef1} className="img-fluid" alt="" />
@@ -65,7 +66,8 @@ const Chef = () => {
               <motion.div
                 initial={{ opacity: 0, x: 300 }}
                 whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.3, delay: 0.1 }}
+                transition={{ duration: 0.2, delay: 0.1 }}
+                whileHover={{ scale: 1.06 }}
                 className="chef-member"
               >
                 <div className="member-img">
@@ -106,7 +108,8 @@ const Chef = () => {
               <motion.div
                 initial={{ opacity: 0, x: 300 }}
                 whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.3, delay: 0.2 }}
+                transition={{ duration: 0.2, delay: 0.2 }}
+                whileHover={{ scale: 1.06 }}
                 className="chef-member"
               >
                 <div className="member-img">
@@ -170,9 +173,8 @@ const ChefContainer = styled.div`
     overflow: hidden;
     text-align: center;
     border-radius: 5px;
-    background: #fff;
+    background: #eee;
     box-shadow: 0px 0 30px rgba(55, 55, 63, 0.08);
-    transition: 0.3s;
   }
 
   .chefs .chef-member .member-img {
@@ -247,7 +249,6 @@ const ChefContainer = styled.div`
   }
 
   .chefs .chef-member:hover {
-    transform: scale(1.08);
     box-shadow: 0px 0 30px rgba(55, 55, 63, 0.15);
   }
 

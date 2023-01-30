@@ -142,6 +142,7 @@ const CuisineContainer = styled.div`
     }
 
     .title {
+      width: 100%;
       position: absolute;
       top: 50%;
       left: 50%;
@@ -160,6 +161,8 @@ const CuisineContainer = styled.div`
 
   .card:hover .title {
     opacity: 1;
+    padding: 0.8rem;
+    background: rgb(55 55 63 / 60%);
   }
 
   .card:hover img {

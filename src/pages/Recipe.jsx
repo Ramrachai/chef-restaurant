@@ -212,7 +212,7 @@ const Button = styled.button`
 const Info = styled.div`
   flex: 1;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
   max-width: 100%;
 
