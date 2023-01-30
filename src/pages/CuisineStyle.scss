@@ -1,0 +1,99 @@
+.cat-title {
+  color: white;
+  text-align: center;
+  font-size: 16;
+  span {
+    color: #fbc77af2;
+    text-transform: uppercase;
+    text-decoration: underline;
+  }
+}
+
+.cuisine-container {
+  margin-top: 5vh;
+  margin-bottom: 100px;
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-evenly;
+}
+.card {
+  --background: linear-gradient(to left, #f7ba2b 0%, #ea5358 100%);
+  max-width: 320px;
+  max-height: 220px;
+  padding: 5px;
+  border-radius: 1rem;
+  overflow: visible;
+  background: #f7ba2b;
+  background: var(--background);
+  position: relative;
+  z-index: 1;
+  transition: all 0.5s;
+  cursor: pointer;
+  @media (max-width: 700px) {
+    max-width: 220px;
+  }
+}
+
+.card::after {
+  position: absolute;
+  content: "";
+  top: 30px;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  transform: scale(0.8);
+  filter: blur(25px);
+  background: #f7ba2b;
+  background: var(--background);
+  transition: all 0.5s;
+}
+
+.content {
+  max-width: 300px;
+  max-height: 200px;
+  overflow: hidden;
+
+  @media (max-width: 700px) {
+    max-width: 200px;
+  }
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+    transition: all 0.5s cubic-bezier(0.35, 0.1, 0.25, 1);
+  }
+
+  .title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    opacity: 0;
+    transition: 0.5s;
+  }
+}
+
+// hover effect
+
+.card:hover::after {
+  opacity: 0;
+}
+
+.card:hover .title {
+  opacity: 1;
+  text-shadow: 7px 8px 3px black;
+}
+
+.card:hover img {
+  filter: blur(2px);
+}

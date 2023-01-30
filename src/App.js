@@ -4,17 +4,15 @@ import { BrowserRouter as Router, Link } from "react-router-dom";
 import Search from "./components/Search";
 import styled from "styled-components";
 import { GiKnifeFork } from "react-icons/gi";
+import Navmenu from "./components/Navmenu";
 
 function App() {
   return (
     <div className="App">
       <Router>
-        <Nav>
-          <GiKnifeFork />
-          <Logo to="/">Recipe App</Logo>
-        </Nav>
-        <Search />
-        <Category />
+        <Navmenu />
+        {/* <Search />
+        <Category /> */}
         <Pages />
       </Router>
     </div>

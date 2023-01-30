@@ -17,7 +17,10 @@ function Search() {
   return (
     <FormStyle onSubmit={submitHandler}>
       <div>
-        <FaSearch />
+        <FaSearch
+          style={{ right: input ? "-10%" : "20%" }}
+          onClick={submitHandler}
+        />
         <input
           type="text"
           value={input}
@@ -31,31 +34,12 @@ function Search() {
 const FormStyle = styled.form`
   position: relative;
   width: 100%;
-  width: 100%;
-  width: 100%;
-
-  width: 100%;
-
-  width: 100%;
-
-  width: 100%;
-
-  width: 100%;
-  width: 100%;
-
-  width: 100%;
-
-  width: 100%;
-
-  width: 100%;
-
   display: flex;
   justify-content: center;
   align-items: center;
 
   div {
     position: relative;
-    width: 500px;
     max-width: 100%;
     display: flex;
     justify-content: center;
@@ -65,9 +49,9 @@ const FormStyle = styled.form`
   input {
     border: none;
     background: linear-gradient(35deg, #494949, #313131);
-    font-size: 1.5rem;
+    font-size: 18px;
     color: white;
-    padding: 1rem 3rem;
+    padding: 10px 12px;
     border: none;
     border-radius: 0.5rem;
     outline: none;
@@ -77,9 +61,10 @@ const FormStyle = styled.form`
   svg {
     position: absolute;
     top: 50%;
-    left: 0%;
     transform: translate(100%, -50%);
     color: white;
+    transition: all 0.5s;
+    cursor: pointer;
   }
 `;
 
