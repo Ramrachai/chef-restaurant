@@ -9,9 +9,9 @@ function Recipe() {
   console.log("router name:", name);
 
   const [activeTab, setActiveTab] = useState("instructions");
-
+  const API_KEY = "999fc998c0314ed1855887bd39fa55ec";
   const queryName = `detail-${name}`;
-  const api_url = `https://api.spoonacular.com/recipes/${name}/information?apiKey=${process.env.REACT_APP_API_KEY}`;
+  const api_url = `https://api.spoonacular.com/recipes/${name}/information?apiKey=${API_KEY}`;
 
   const { isLoading, data, error } = useQuery(
     queryName,

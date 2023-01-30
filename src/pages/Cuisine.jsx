@@ -9,9 +9,11 @@ function Cuisine() {
   let { type } = useParams();
   console.log("route type= ", type);
 
+  const API_KEY = "999fc998c0314ed1855887bd39fa55ec";
+
   const fetchData = async () => {
     const res = await fetch(
-      `https://api.spoonacular.com/recipes/complexSearch?apiKey=${process.env.REACT_APP_API_KEY}&type=${type}&number=40`
+      `https://api.spoonacular.com/recipes/complexSearch?apiKey=${API_KEY}&type=${type}&number=40`
     );
     const data = await res.json();
     console.log("cuisine page data from api:", data);
