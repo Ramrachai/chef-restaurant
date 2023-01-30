@@ -9,7 +9,7 @@ It is a restaurant and recipe App that lets you showcase your restaurants inform
 - Reactjs
 - NPM packages as:
   - Styled-components for using the CSS inside the JSX.
-  - react-bootstrap
+  - react-bootstrap.
   - React-router-dom for the routes of the App.
   - Framer-motion for animations when changing pages.
   - React icons.

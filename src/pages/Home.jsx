@@ -1,5 +1,3 @@
-import Veggie from "../components/Veggie";
-import Popular from "../components/Popular";
 import { motion } from "framer-motion";
 
 import React from "react";
@@ -10,8 +8,6 @@ import Statistics from "../components/Statistics";
 import Testimonial from "../components/Testimonial";
 import Chef from "../components/Chef";
 import Contact from "../components/Contact";
-import styled from "styled-components";
-import Footer from "../components/Footer";
 
 function Home() {
   return (
@@ -28,7 +24,6 @@ function Home() {
       <Testimonial />
       <Chef />
       <Contact />
-      <Footer />
     </motion.div>
   );
 }
