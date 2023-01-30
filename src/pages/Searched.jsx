@@ -5,6 +5,7 @@ import styled from "styled-components";
 function Searched() {
   const [searchedRecipes, setSearchedRecipes] = useState([]);
   let params = useParams();
+  console.log("search page params:", params);
 
   const getSearched = async (name) => {
     const data = await fetch(
@@ -13,6 +14,8 @@ function Searched() {
     const recipes = await data.json();
     setSearchedRecipes(recipes.results);
   };
+
+  console.log("searched data", searchedRecipes);
 
   useEffect(() => {
     getSearched(params.search);

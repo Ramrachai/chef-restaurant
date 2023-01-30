@@ -6,6 +6,7 @@ import axios from "axios";
 
 function Recipe() {
   let { name } = useParams();
+  console.log("router name:", name);
 
   const [activeTab, setActiveTab] = useState("instructions");
 
@@ -24,6 +25,7 @@ function Recipe() {
     }
   );
 
+  console.log("detail page data:", data);
   {
     isLoading && <Loading>Loading...</Loading>;
   }
