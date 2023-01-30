@@ -1,4 +1,4 @@
-# Live preview Link: <a href='ramrachai.com/chefrestaurant'>ChefRestaurant </a>
+# Live preview Link: [ChefRestaurant](https://ramrachai.com/chefrestaurant)
 
 ![Recipe App Image](./pic.jpg "Recipe App image")
 

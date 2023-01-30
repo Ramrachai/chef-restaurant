@@ -7,7 +7,6 @@ import { useQuery } from "react-query";
 
 function Cuisine() {
   let { type } = useParams();
-  console.log("route type= ", type);
 
   const API_KEY = "999fc998c0314ed1855887bd39fa55ec";
 
@@ -16,7 +15,6 @@ function Cuisine() {
       `https://api.spoonacular.com/recipes/complexSearch?apiKey=${API_KEY}&type=${type}&number=40`
     );
     const data = await res.json();
-    console.log("cuisine page data from api:", data);
     return data.results;
   };
 
@@ -24,8 +22,6 @@ function Cuisine() {
     staleTime: 900000,
     cacheTime: 1200000,
   });
-
-  console.log("cuisine page data from useQuery:", data);
 
   return (
     <>
