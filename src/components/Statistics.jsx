@@ -18,28 +18,44 @@ const Statistics = () => {
           <div className="row gy-4">
             <div className="col-lg-3 col-md-6">
               <div className="stats-item text-center w-100 h-100">
-                {inView && <CountUp end={320} delay={0.5} duration={1.75} />}
+                {inView ? (
+                  <CountUp end={320} delay={0.5} duration={1.75} />
+                ) : (
+                  <p>0</p>
+                )}
                 <p>Menu Items</p>
               </div>
             </div>
 
             <div className="col-lg-3 col-md-6">
               <div className="stats-item text-center w-100 h-100">
-                {inView && <CountUp end={5290} delay={0.5} duration={1.75} />}
+                {inView ? (
+                  <CountUp end={5290} delay={0.5} duration={1.75} />
+                ) : (
+                  <p>0</p>
+                )}
                 <p>Satisfied Customers</p>
               </div>
             </div>
 
             <div className="col-lg-3 col-md-6">
               <div className="stats-item text-center w-100 h-100">
-                {inView && <CountUp end={43800} delay={0.5} duration={1.75} />}
+                {inView ? (
+                  <CountUp end={43800} delay={0.5} duration={1.75} />
+                ) : (
+                  <p>0</p>
+                )}
                 <p>Hours Of Service</p>
               </div>
             </div>
 
             <div className="col-lg-3 col-md-6">
               <div className="stats-item text-center w-100 h-100">
-                {inView && <CountUp end={65} delay={0.5} duration={1.75} />}
+                {inView ? (
+                  <CountUp end={65} delay={0.5} duration={1.75} />
+                ) : (
+                  <p>0</p>
+                )}
                 <p>Staffs</p>
               </div>
             </div>
