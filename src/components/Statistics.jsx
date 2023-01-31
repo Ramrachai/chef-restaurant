@@ -21,7 +21,7 @@ const Statistics = () => {
                 {inView ? (
                   <CountUp end={320} delay={0.5} duration={1.75} />
                 ) : (
-                  <p>0</p>
+                  <CountUp end={0} />
                 )}
                 <p>Menu Items</p>
               </div>
@@ -32,7 +32,7 @@ const Statistics = () => {
                 {inView ? (
                   <CountUp end={5290} delay={0.5} duration={1.75} />
                 ) : (
-                  <p>0</p>
+                  <CountUp end={0} />
                 )}
                 <p>Satisfied Customers</p>
               </div>
@@ -43,7 +43,7 @@ const Statistics = () => {
                 {inView ? (
                   <CountUp end={43800} delay={0.5} duration={1.75} />
                 ) : (
-                  <p>0</p>
+                  <CountUp end={0} />
                 )}
                 <p>Hours Of Service</p>
               </div>
@@ -54,7 +54,7 @@ const Statistics = () => {
                 {inView ? (
                   <CountUp end={65} delay={0.5} duration={1.75} />
                 ) : (
-                  <p>0</p>
+                  <CountUp end={0} />
                 )}
                 <p>Staffs</p>
               </div>
